@@ -43,7 +43,7 @@
                     <select class="form-control" name="redes" hx-get="{% url 'p_microredes' %}" hx-trigger="change" hx-target="#p_microredes">
                         <option value="">--- SELECCIONAR ---</option>
                         {% for p in redes %}
-                        <option value="{{ p.codigo_red_filtrado }}">{{ p.Red }} </option>
+                        <option value="{{ p.Red }}">{{ p.Red }} </option>
                         {% endfor %}
                     </select>
                 </div>

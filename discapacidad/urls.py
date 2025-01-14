@@ -27,7 +27,7 @@ urlpatterns = [
     path('get_microredes/<int:microredes_id>/', views.get_microredes, name='get_microredes'),
     path('p_microredes/', views.p_microredes, name='p_microredes'),
     #-- microredes excel
-    path('rpt_operacional_microred_excel/', RptOperacinalMicroRed.as_view(), name = 'rpt_operacional_microred_xls'),
+    path('get_microredes_paquete_gestante/', RptOperacinalMicroRed.as_view(), name = 'rpt_operacional_red_xls'),
     
     # establecimientos
     path('get_establecimientos/<int:establecimiento_id>/', views.get_establecimientos, name='get_establecimientos'),
